@@ -16,14 +16,12 @@ export default function Navigation() {
                 <div className="w-full flex gap-8 items-center justify-center sm:w-6/12 sm:justify-around md:w-4/12 lg:w-3/12 lg:justify-evenly">
                     <Link
                         href={"/auth/signin"}
-                        title="sign-in"
                         className="px-3 py-2 sm:px-5 sm:py-3 font-bold rounded-lg text-white shadow-xl cursor-pointer bg-teal-400 hover:bg-teal-500"
                     >
                         sign in
                     </Link>
                     <Link
                         href={"/auth/signup"}
-                        title="sign-up"
                         className="px-3 py-2 sm:px-5 sm:py-3 font-bold rounded-lg text-white shadow-xl cursor-pointer bg-teal-400 hover:bg-teal-500"
                     >
                         sign up

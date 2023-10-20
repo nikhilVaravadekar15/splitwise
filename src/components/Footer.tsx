@@ -36,11 +36,11 @@ export default function Footer() {
                 </p>
                 <p className="text-center text-slate-500">
                     <Link href={"/#"}>
-                        <span className="text-slate-700 hover:text-teal-600">Terms </span>
+                        <span className="text-indigo-600 hover:text-teal-600">Terms </span>
                     </Link>
                     &
                     <Link href={"/#"}>
-                        <span className="text-slate-700 hover:text-teal-600"> Conditions</span>
+                        <span className="text-indigo-600 hover:text-teal-600"> Conditions</span>
                     </Link>
                 </p>
             </div>

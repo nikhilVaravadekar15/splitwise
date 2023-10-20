@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   description: "Keep track of your shared expenses and balances with housemates, trips, groups, friends, and family.",
   icons: {
     icon: [
-      "assets/images/logo/favicon-16x16.png"
+      "/assets/images/logo/favicon-16x16.png"
     ],
     apple: [
-      "assets/images/logo/apple-touch-icon-precomposed.png",
+      "/assets/images/logo/apple-touch-icon-precomposed.png",
     ],
     other: [
       {
-        url: "assets/images/logo/favicon-32x32.png",
+        url: "/assets/images/logo/favicon-32x32.png",
         sizes: "32x32",
       }
     ]
