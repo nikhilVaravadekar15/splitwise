@@ -1,10 +1,14 @@
 "use client"
 
 import {
-    LogOut,
     Plus,
+    LogOut,
     Search,
+    Users2,
     UserCog,
+    Sparkles,
+    ScrollText,
+    LayoutDashboard,
 } from "lucide-react"
 import {
     Avatar,
@@ -22,8 +26,30 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { TSidebar } from "@/types/index";
 import { Button } from "@/components/ui/button";
-import { sidebarData } from "@/static/data";
 
+
+const sidebarData: TSidebar[] = [
+    {
+        icon: <LayoutDashboard className="h-5 w-5" />,
+        title: "Dashboard",
+        link: "/dashboard/board"
+    },
+    {
+        icon: <Sparkles className="h-5 w-5" />,
+        title: "Friends",
+        link: "/dashboard/friends"
+    },
+    {
+        icon: <Users2 className="h-5 w-5" />,
+        title: "Groups",
+        link: "/dashboard/groups"
+    },
+    {
+        icon: <ScrollText className="h-5 w-5" />,
+        title: "Activities",
+        link: "/dashboard/activities"
+    },
+]
 
 export default function Sidebar() {
     const [activeTab, setActiveTab] = React.useState<number>(0);

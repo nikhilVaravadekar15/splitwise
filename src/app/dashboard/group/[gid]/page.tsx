@@ -1,6 +1,18 @@
 "use client"
 
 import {
+    Share2,
+    Trash2,
+    Wallet,
+    Pencil,
+    Camera,
+    Banknote,
+    FileDown,
+    PieChart,
+    MessagesSquare,
+    ClipboardSignature,
+} from "lucide-react"
+import {
     Avatar,
     AvatarFallback,
     AvatarImage
@@ -15,12 +27,57 @@ import React from "react";
 import Image from "next/image";
 import { TSlider } from "@/types/index";
 import { Button } from "@/components/ui/button";
-import { groupActions, transactionActions } from "@/static/data/index";
 import { Accordion, Timeline } from "@mantine/core";
 
 
+const groupActions: TSlider[] = [
+    {
+        icon: <Banknote size={"1.25rem"} />,
+        title: "Settle-up"
+    },
+    {
+        icon: <Wallet size={"1.25rem"} />,
+        title: "Balances"
+    },
+    {
+        icon: <PieChart size={"1.25rem"} />,
+        title: "Total"
+    },
+    {
+        icon: <Share2 size={"1.25rem"} />,
+        title: "Invite"
+    },
+    {
+        icon: <ClipboardSignature size={"1.25rem"} />,
+        title: "Whiteboard"
+    },
+    {
+        icon: <FileDown size={"1.25rem"} />,
+        title: "Export"
+    },
+];
 
-export default function Group(props: any) {
+const transactionActions: TSlider[] = [
+    {
+        icon: <MessagesSquare size={"1.25rem"} />,
+        title: "Messages"
+    },
+    {
+        icon: <Camera size={"1.25rem"} />,
+        title: "Picture"
+    },
+    {
+        icon: <Trash2 size={"1.25rem"} />,
+        title: "Delete"
+    },
+    {
+        icon: <Pencil size={"1.25rem"} />,
+        title: "Edit"
+    },
+];
+
+
+export default function Group() {
 
     const [activeAccordion, setActiveAccordion] = React.useState<number>(0)
 

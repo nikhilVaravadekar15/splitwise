@@ -7,9 +7,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from "swiper"
 import { Autoplay } from "swiper/modules"
 import { TSlider } from '@/types/index';
-import { customSwiperData } from '@/static/data/index';
 
 type Props = {}
+
+const customSwiperData: TSlider[] = [
+    {
+        icon: <>🛩</>,
+        title: "on trips.",
+        className: "text-teal-600 hover:text-teal-700"
+    },
+    {
+        icon: <>🏘</>,
+        title: "with housemates.",
+        className: "text-purple-600 hover:text-purple-700"
+    },
+    {
+        icon: <>💗</>,
+        title: "with your partner.",
+        className: "text-red-600 hover:text-red-700"
+    },
+    {
+        icon: <>⭐</>,
+        title: "with anyone.",
+        className: "text-yellow-600 hover:text-yellow-700"
+    }
+]
 
 export default function CustomSwiper({ }: Props) {
     SwiperCore.use([Autoplay])
