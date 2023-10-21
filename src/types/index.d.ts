@@ -6,3 +6,8 @@ export type TSlider = {
     title: string,
     className?: string
 }
+
+// Sidebar
+export type TSidebar = TSlider & {
+    link: string
+}

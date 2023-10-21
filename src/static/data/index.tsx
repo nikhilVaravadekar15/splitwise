@@ -1,5 +1,34 @@
-import { TSlider } from "@/types/index"
+import {
+    Banknote,
+    Camera,
+    ClipboardSignature,
+    FileDown,
+    LayoutDashboard, MessagesSquare, Pencil, PieChart, ScrollText, Share2, Sparkles, Trash2, Users2, Wallet
+} from "lucide-react"
+import { TSidebar, TSlider } from "@/types/index"
 
+export const sidebarData: TSidebar[] = [
+    {
+        icon: <LayoutDashboard className="h-5 w-5" />,
+        title: "Dashboard",
+        link: "/dashboard/board"
+    },
+    {
+        icon: <Sparkles className="h-5 w-5" />,
+        title: "Friends",
+        link: "/dashboard/friends"
+    },
+    {
+        icon: <Users2 className="h-5 w-5" />,
+        title: "Groups",
+        link: "/dashboard/groups"
+    },
+    {
+        icon: <ScrollText className="h-5 w-5" />,
+        title: "Activities",
+        link: "/dashboard/activities"
+    },
+]
 
 export const customSwiperData: TSlider[] = [
     {
@@ -23,3 +52,51 @@ export const customSwiperData: TSlider[] = [
         className: "text-yellow-600 hover:text-yellow-700"
     }
 ]
+
+
+export const groupActions: TSlider[] = [
+    {
+        icon: <Banknote size={"1.25rem"} />,
+        title: "Settle-up"
+    },
+    {
+        icon: <Wallet size={"1.25rem"} />,
+        title: "Balances"
+    },
+    {
+        icon: <PieChart size={"1.25rem"} />,
+        title: "Total"
+    },
+    {
+        icon: <Share2 size={"1.25rem"} />,
+        title: "Invite"
+    },
+    {
+        icon: <ClipboardSignature size={"1.25rem"} />,
+        title: "Whiteboard"
+    },
+    {
+        icon: <FileDown size={"1.25rem"} />,
+        title: "Export"
+    },
+];
+
+
+export const transactionActions: TSlider[] = [
+    {
+        icon: <MessagesSquare size={"1.25rem"} />,
+        title: "Messages"
+    },
+    {
+        icon: <Camera size={"1.25rem"} />,
+        title: "Picture"
+    },
+    {
+        icon: <Trash2 size={"1.25rem"} />,
+        title: "Delete"
+    },
+    {
+        icon: <Pencil size={"1.25rem"} />,
+        title: "Edit"
+    },
+];
